@@ -249,10 +249,13 @@ const JobDetails = {
 
 const router = VueRouter.createRouter({
     history: VueRouter.createWebHashHistory(),
-    routes: [{
+    routes: [
+      {
         path: '/job/:id',
         component: JobDetails
-    }]
+      },
+      {path: '/', component: JobOverview}
+  ]
 
 });
 
